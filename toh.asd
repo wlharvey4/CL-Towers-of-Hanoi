@@ -1,5 +1,5 @@
-;;; toh.ask Towers of Hanoi algorithm
-;;; Time-stamp: <2023-09-17 18:58:08 wlh>
+;;; toh.asd Towers of Hanoi algorithm
+;;; Time-stamp: <2023-09-17 23:00:48 wlh>
 
 ;;; Created: 2023-09-17
 ;;; Commentary

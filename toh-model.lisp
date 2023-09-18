@@ -1,10 +1,10 @@
 ;;; toh-model.lisp -- Model for Towers of Hanoi algorithm
-;;; Time-stamp: <2023-09-17 22:53:11 wlh>
+;;; Time-stamp: <2023-09-17 23:06:17 wlh>
 
 ;;; Created: 2023-09-17
 
 ;;; Commentary:
-;;  *tower* is a list holding three lists representing the three
+;;  *towers* is a list holding three lists representing the three
 ;;  towers.  Numbers represent the different disks sitting on the
 ;;  towers; the larger the number, the larger the size of the disk.
 ;;  Disks are moved from one tower to another one at a time; smaller
@@ -36,6 +36,9 @@ the number of disks to place on this tower."
       (1 (setf *towers* (list stack () ())))
       (2 (setf *towers* (list () stack ())))
       (3 (setf *towers* (list () () stack))))))
+
+(defun reset-moves ()
+  (setf *moves* 0))
 
 (defun check-move (from to)
   "Procedure to run before the `move` procedure to make sure the

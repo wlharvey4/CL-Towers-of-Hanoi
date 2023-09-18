@@ -1,9 +1,14 @@
 ;;; tow-controller.lisp -- Towers of Hanoi controller procededures
-;;; Time-stamp: <2023-09-17 22:12:08 wlh>
+;;; Time-stamp: <2023-09-17 23:06:36 wlh>
 
 ;;; Created: 2023-09-17
 
 ;;; Commentary:
+;;  These procedures start algorithm or make a move.  The player can
+;;  play the game manually using `manual-move-disk.`
+;;  `move-tower` is the fundamental recursive algorithm that solves
+;;  the problem without needing to know how to solve the problem.
+;;  `towers-of-hanoi` starts the program running.
 
 ;;; Code:
 
@@ -30,10 +35,10 @@ another tower using a spare tower.  This is the main algorithm."
 
 (defun towers-of-hanoi (from-post to-post)
   "The main procedure (along with for `reset-towers`) that should be
-exported to be run by the end user.  The first parameter is the post
-that holds the stack of disks, and the second parameter is the post to
+exported to be run by the end user.  The first parameter is the tower
+that holds the stack of disks, and the second parameter is the tower to
 move the stack."
-  (setf *moves* 0)
+  (reset-moves)
   (let ((n (length
 	    (case from-post
 	      (1 (first *towers*))

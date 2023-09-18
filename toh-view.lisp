@@ -1,9 +1,10 @@
 ;;; toh-view.lisp -- Towers of Hanoi View Controller file
-;;; Time-stamp: <2023-09-17 22:12:41 wlh>
+;;; Time-stamp: <2023-09-17 23:02:13 wlh>
 
 ;;; Created: 2023-09-17
 
 ;;; Commentary:
+;;  These procedures produce the output.
 
 ;;; Code:
 
