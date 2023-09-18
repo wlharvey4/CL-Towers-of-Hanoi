@@ -1,5 +1,5 @@
 ;;; toh-model.lisp -- Model for Towers of Hanoi algorithm
-;;; Time-stamp: <2023-09-17 23:06:17 wlh>
+;;; Time-stamp: <2023-09-17 23:27:18 wlh>
 
 ;;; Created: 2023-09-17
 
@@ -39,6 +39,20 @@ the number of disks to place on this tower."
 
 (defun reset-moves ()
   (setf *moves* 0))
+
+(defun stack-height (tower)
+  "Returns the number of disks sitting on a given tower."
+  (length
+   (case tower
+     (1 (first *towers*))
+     (2 (second *towers*))
+     (3 (third *towers*)))))
+
+(defun calculate-spare (from to)
+  (case (+ from to)
+    (3 3)
+    (4 2)
+    (5 1)))
 
 (defun check-move (from to)
   "Procedure to run before the `move` procedure to make sure the
