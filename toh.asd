@@ -1,5 +1,5 @@
 ;;; toh.asd Towers of Hanoi algorithm
-;;; Time-stamp: <2023-09-17 23:00:48 wlh>
+;;; Time-stamp: <2023-09-17 23:33:42 wlh>
 
 ;;; Created: 2023-09-17
 ;;; Commentary
@@ -7,7 +7,7 @@
 
 (defsystem "toh"
   :description "Towers of Hanoi"
-  :version "0.1.0"
+  :version "0.2.0"
   :author "LOLH <lincolnlaw@mac.com>"
   :license "CCO 1.0 Universal"
   :components
