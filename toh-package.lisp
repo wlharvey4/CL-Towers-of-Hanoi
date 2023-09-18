@@ -1,5 +1,5 @@
 ;;; toh-package.lisp -- Towers of Hanoi Package File
-;;; Time-stamp: <2023-09-17 21:18:04 wlh>
+;;; Time-stamp: <2023-09-17 22:39:51 wlh>
 
 ;;; Created: 2023-09-17
 
@@ -15,6 +15,7 @@
    :view-towers
    :view-towers-and-moves
    :reset-towers
+   :manual-move-disk
    :towers-of-hanoi))
 
 ;; End toh-class.lisp
