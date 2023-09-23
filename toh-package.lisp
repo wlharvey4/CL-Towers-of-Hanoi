@@ -1,5 +1,5 @@
 ;;; toh-package.lisp -- Towers of Hanoi Package File
-;;; Time-stamp: <2023-09-19 01:49:34 wlh>
+;;; Time-stamp: <2023-09-22 22:15:54 wlh>
 
 ;;; Created: 2023-09-17
 
@@ -21,6 +21,7 @@
 (defpackage :lolh/toh-simple
   (:use :cl)
   (:export
-   :simple-towers))
+   :simple-towers
+   :toh-count))
 
 ;; End toh-class.lisp

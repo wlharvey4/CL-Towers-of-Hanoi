@@ -1,5 +1,5 @@
 ;;; toh.asd Towers of Hanoi algorithm
-;;; Time-stamp: <2023-09-19 02:15:02 wlh>
+;;; Time-stamp: <2023-09-22 22:19:36 wlh>
 
 ;;; Created: 2023-09-17
 ;;; Commentary
@@ -7,7 +7,7 @@
 
 (defsystem "toh"
   :description "Towers of Hanoi"
-  :version "0.3.0"
+  :version "0.4.0"
   :author "LOLH <lincolnlaw@mac.com>"
   :license "CCO 1.0 Universal"
   :components
@@ -15,6 +15,7 @@
    (:file "toh-model" :depends-on ("toh-package"))
    (:file "toh-view" :depends-on ("toh-package" "toh-model"))
    (:file "toh-controller" :depends-on ("toh-package" "toh-model"))
-   (:file "toh-simple")))
+   (:file "toh-simple")
+   (:file "toh-count")))
 
 ;;; End toh.asd
